@@ -6,7 +6,7 @@ const codes = ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8"];
 
 const noms = [
   "demarche-pedagogique-solicode",
-  "HTML/CSS",
+  "HTML / CSS",
   "JS",
   "Bases de données",
   "Node.js",
@@ -38,15 +38,19 @@ if (repence !== "" && repence.toUpperCase() === codes[i]) {
     
 }
 
-  
     console.log("Score total  " +score + " /8")
+    
 if ( score <= noms.length / 2) {
         console.log( `Merci d'avoir joué, ${personalP}! Vous pouvez réessayer pour améliorer votre score.`)   
 }
 else if (score === noms.length) {
-  console.log(` 🌟 Bravo ${personalP}! Excellent travail!`)}
+
+    console.log(` 🌟 Bravo ${personalP}! Excellent travail!`)
+  }
+
   else if (score >= noms.length / 2) {
-    console.log("👍 Bien joué ! Continue de t'entraîner.");
+
+      console.log("👍 Bien joué ! Continue de t'entraîner.");
   }
 }
        
