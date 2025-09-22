@@ -18,7 +18,6 @@ const noms = [
 
 function jeu() {
    
-    
 
 for (let i= 0; i< noms.length; i++) {
     console.log("question" +(i+1))
@@ -39,7 +38,7 @@ if (repence !== "" && repence.toUpperCase() === codes[i]) {
 }
 
     console.log("Score total  " +score + " /8")
-    
+
 if ( score <= noms.length / 2) {
         console.log( `Merci d'avoir joué, ${personalP}! Vous pouvez réessayer pour améliorer votre score.`)   
 }
