@@ -5,13 +5,13 @@ let   personalP = prompt("Veuillez entrer votre nom pour commencer le jeu:");
 const codes = ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8"];
 
 const noms = [
-  "demarche-pedagogique-solicode",
+  "Maquettage",
   "HTML / CSS",
   "JS",
-  "Bases de données",
-  "Node.js",
-  "React",
-  "Gestion de projet",
+  "SQL",
+  "AccèsBDD",
+  "PHP",
+  "CMS",
   "FrameworkJS"
 ];  
  let score=0;
