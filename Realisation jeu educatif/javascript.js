@@ -4,16 +4,7 @@ let   personalP = prompt("Veuillez entrer votre nom pour commencer le jeu:");
 
 const codes = ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8"];
 
-const noms = [
-  "Maquettage",
-  "HTML / CSS",
-  "JS",
-  "SQL",
-  "AccèsBDD",
-  "PHP",
-  "CMS",
-  "FrameworkJS"
-];  
+const noms = [ "Maquettage", "HTML / CSS", "JS", "SQL", "AccèsBDD", "PHP","CMS","FrameworkJS"];  
  let score=0;
 
 function jeu() {
