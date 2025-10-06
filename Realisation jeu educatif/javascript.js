@@ -14,7 +14,7 @@ for (let i= 0; i< noms.length; i++) {
     console.log("question" +(i+1))
      
 let repence= prompt("Quel est le code de la compétence: " +noms[i]);
-if (repence !== "" && repence.toUpperCase() === codes[i]) {
+if (repence !== " " && repence.trim().toUpperCase() === codes[i]) {
 
     console.log(" ✅ Correct! La réponse est bien " +codes[i])
     score++;

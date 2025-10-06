@@ -4,19 +4,15 @@ function nombreOccurence() {
 let elementchercher = prompt("enterer elementchercher c  : ");
 let compteur= 0;
 
-for (let i = 0; i < competence.length; i++) {
-    
+for (let i = 0; i < competence.length; i++) { 
     if (competence[i] === elementchercher) {
-
         compteur ++;
-
         // console.log("le nombre de "+ elementchercher +"est"+ compteur );
-    }
-  
-    
+    }  
 }
 console.log("le nombre  delement   "+ elementchercher +" est "+ compteur );
 }
+
 nombreOccurence();
 
 

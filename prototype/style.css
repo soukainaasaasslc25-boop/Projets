@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+   
+}
+.navbar {
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1a1a1a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+ 
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00c3ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00c3ff;
+}
+.home{
+ margin-top: 60px;
+     /* background: linear-gradient(to right, rgb(243, 201, 201),rgb(255, 255, 255)); */
+  background-image: url(images/téléchargement\ \(1\).jpg);
+background-size: cover;
+       display: flex;
+justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 100%;
+
+  border-radius: 16px;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+
+}
+.home img{
+     padding: 10px;
+      width: 280px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #e1dede;
+  box-shadow: 0 0 10px rgba(233, 181, 181, 0.1);
+}
+ .home h1 {
+     padding: 10px;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+         .home h3 {
+             padding: 10px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.9);
+        }
+.home p{
+     padding: 10px;
+     font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+ .hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-buttons .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-buttons .btn.black {
+  background: #f7f6f6;
+  color: #151313;
+}
+
+.hero-buttons .btn.black:hover {
+  background: #4e4646;
+}
+
+
+
+
+
+.hero-buttons .btn.orange {
+  background: #e7ceb5;
+  color: #141212;
+}
+
+.hero-buttons .btn.orange:hover {
+  background: #f9cbae;
+}
+
+section  h1{
+    font-size:  2.5rem;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+section  h1 span{
+    font-size:2.5rem ;
+    color: rgb(240, 147, 150);
+
+
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 50px;
+  max-width: 100%;
+
+  border-radius: 16px;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.À-propos-biographie p{
+    line-height: 1.6;
+    font-size: 20px;
+}
+.À-propos-img{
+   display: flex;
+  align-items: center;
+   flex-direction: column;
+   gap: 50px;
+}
+
+.À-propos-img  img{
+    
+     border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+   box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.1);
+}
+.social-icons{
+     padding: 20px 0px;
+  font-size: 1.5rem;
+  
+  margin-bottom: 15px;
+  
+}
+.social-icons a{
+    color: rgb(242, 107, 188);
+     margin: 10px auto 0;
+     padding: 16px;
+}
+.social-icons a:hover{
+    background-color:rgb(242, 107, 188);
+    color: aliceblue;
+    border-radius: 15px;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.1);
+}
+table {
+  width: 1200PX;
+  border-collapse: collapse;
+  margin: 30px;
+  border-radius: 15px;
+  border: none;
+  
+}
+
+ table th, td {
+    
+ padding: 20px;
+    font-weight: bold;
+  border: 1px solid #ddd;
+  text-align: center;
+    
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 19px;
+}
+
+
+thead {
+  background: #fafafa;
+  color: rgb(28, 25, 25);
+}
+caption{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.hobbies ul{
+
+     display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin: 20px;
+            list-style: none;
+
+}
+.hobbies ul li{
+
+    background-color: rgb(249, 249, 249);
+    text-align: center;
+    font-size: large;
+
+    padding: 30px 30px;
+
+    font-size: 0.9rem;
+     font-weight: 600;
+            font-size: 1.1rem;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.1);
+
+    
+
+}
+.hobbies ul li:hover{
+    background: linear-gradient(to right,rgb(248, 225, 225),rgb(243, 191, 191));
+}
+footer{
+    display: flex;
+   flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  justify-items: center;
+  justify-content: center;
+  margin: 20px;
+    padding: 20px;
+    background: #e2d1d1;
+    border-radius: 10px;
+    
+
+}
+footer h4{
+    
+    margin-top: 10px;
+font-size: 20px;
+
+}
+footer h4 a{
+   color: rgb(23, 16, 217);
+    list-style: none;
+}footer p{
+    font-size: 1.5rem;
+}
