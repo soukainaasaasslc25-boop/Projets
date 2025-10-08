@@ -12,14 +12,21 @@
     <nav class="navbar">
   <div class="logo">MonPortfolio</div>
 
-  
-
   <ul class="nav-links" id="nav-links">
-    <li><a href="#home">Accueil</a></li>
-    <li><a href="#about">À propos</a></li>
-    <li><a href="#competence">Compétences</a></li>
-    
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="index (1).html">Accueil</a></li>
+   
+
+    <!-- Lien principal avec sous-menu -->
+    <li class="dropdown">
+      <a href="cv.html">CV</a>
+      <ul class="dropdown-menu">
+        <li><a href="#competence">Compétences</a></li>
+        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#formation">Formations</a></li>
+      </ul>
+    </li>
+
+    <li><a href="Contact.html">Contact</a></li>
   </ul>
 </nav>
 
@@ -88,7 +95,7 @@
     
 
     
-       <section class="skills-section">
+       <section class="skills-section" id="competence">
     <h2> <span>Mes</span> competence</h2>
     <div class="skills-grid">
       <div class="skill-box">60% <span>Figma</span></div>
@@ -102,7 +109,7 @@
     </div>
   </section>
 
-  <section class="whyme-section">
+  <section class="whyme-section" id="formation">
     <h2>Pour quoi <span> Moi</span></h2>
     <div class="whyme-container">
       <div class="education">
@@ -125,7 +132,7 @@
         </div>
       </div>
 
-      <div class="experience">
+      <div class="experience" id="experience">
         <h3>Experience</h3>
         <div class="card">
           <div class="icon"><i class="fas fa-briefcase"></i></div>
