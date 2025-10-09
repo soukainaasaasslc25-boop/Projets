@@ -46,7 +46,7 @@
 
 
 
-/* Sous-menu déroulant */
+
 .dropdown {
   position: relative;
 }
@@ -54,7 +54,7 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  top:100%; /* en dessous du lien parent */
+  top:100%; 
   left: 0;
   background: #222;
   list-style: none;
@@ -83,7 +83,7 @@
   color: #000;
 }
 
-/* Affichage au survol */
+
 .dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -280,26 +280,6 @@ h2 span{
 .skill-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px #ff99cc;
-}
-
-.skill-box::before {
-
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 14px;
-  color: #ff66b2;
-}
-
-.skill-box::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5px;
-  width: 0%;
-  background: #ff66b2;
-  animation: fillBar 2s forwards;
 }
 
 .skill-box span {
