@@ -46,7 +46,7 @@
 
 
 
-
+/* menu deroulent  */
 .dropdown {
   position: relative;
 }
@@ -88,7 +88,7 @@
   display: block;
 }
 
-
+ /* section de presentation */
 
 .home{
  margin-top: 60px;
@@ -188,6 +188,7 @@ hr{
     margin-bottom: 20px;
 }
 
+/*  section des informatio personelle  */
 .container{
     display: flex;
     justify-content: space-between;
@@ -246,11 +247,13 @@ h2 {
   font-size: 36px;
   margin-bottom: 30px;
   color: black;
-  animation: fadeInDown 1s ease-out;
+ 
 }
 h2 span{
   color:rgb(242, 107, 188);
 }
+
+/* skills section   */
 
 .skills-grid {
   display: flex;
@@ -274,7 +277,7 @@ h2 span{
   overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInUp 1s ease forwards;
+ 
 }
 
 .skill-box:hover {
@@ -314,6 +317,8 @@ h2 span{
   font-size: 24px;
   animation: 1.2s ease-out;
 }
+
+/* section formation et experience*/
 
 .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -360,7 +365,7 @@ h2 span{
 
 
 
-
+/* projet  */
 
 .works {
   text-align: center;
