@@ -201,7 +201,7 @@ hr{
     
 }
 .À-propos-biographie p{
-    line-height: 1.6;
+    line-height: 2;
     font-size: 20px;
 }
 .À-propos-img{
@@ -635,6 +635,40 @@ footer .social-icons a{
    transition: color 0.3s ease;
    margin: 10px auto 0;
 }
+footer nav ul{
+
+  
+   color: #fff;
+  display: flex;
+ 
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+ 
+}
+footer nav ul li{
+ 
+  padding: 20px;
+  list-style: none;
+  font-size: 1.3rem;
+  transition: color 2s ease-in-out;
+}
+footer nav ul li a{
+  
+  text-decoration: none;
+  color: #6d214f;
+  font-weight: 600;
+  padding: 5px;
+ border-radius: 10px;
+  
+}
+footer nav ul li a:hover{
+ transform: scale(1.1);
+  color: #432a39;
+ background-color: #ecc0db;
+   box-shadow: 0 2px 20px rgb(242, 107, 188);
+}
+
 footer .social-icons a:hover{
 
   background: #f9e1cb;
