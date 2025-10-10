@@ -267,7 +267,7 @@ h2 span{
  background:  linear-gradient(to right,rgb(255, 255, 255),rgb(236, 164, 184));
   border: 2px solid #ffe5f2;
   border-radius: 12px;
-  width: 130px;
+  width: 150px;
   padding: 20px;
   text-align: center;
   font-size: 30px;
@@ -288,7 +288,7 @@ h2 span{
 .skill-box span {
   display: block;
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 1.3rem;
   color: #962379;
 }
 
