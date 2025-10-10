@@ -264,7 +264,7 @@ h2 span{
 
 .skill-box {
   margin-top: 20px;
- background:  linear-gradient(to right,rgb(230, 200, 224),rgb(136, 48, 89));
+ background:  linear-gradient(to right,rgb(255, 255, 255),rgb(236, 164, 184));
   border: 2px solid #ffe5f2;
   border-radius: 12px;
   width: 130px;
@@ -323,7 +323,7 @@ h2 span{
 
 .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to right,rgb(230, 200, 224),rgb(136, 48, 89));
+  background: linear-gradient(to right,rgb(254, 252, 254),rgb(215, 157, 184));
   border: 1px solid  rgb(230, 200, 224);
   border-radius: 12px;
   padding: 20px;
