@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 20px 0 20px;
+    height: 200px;
+   
+}
+main{
+    margin-top: 200px;
+}
+
+.nav-links{
+    display: flex;
+   gap: 20px;
+    /* padng: 20px 20px; */
+}
+.nav-links li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.logo{
+    color: aliceblue;
+    font-size: 1.9rem;
+    font-weight:bold;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 30px;
+}
+.home img{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    border: 1px solid pink;
+    box-shadow: 0 0 15px  15px  pink ;
+
+}
+.home h2{
+     padding: 10px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    
+}
+.home h3{
+     padding: 10px;
+    color: purple;
+    font-size: 1.5rem;
+
+}
+.home p{
+    line-height: 1.9rem;
+width: 60%;
+ padding: 10px;
+   font-size: 1.1rem;
+
+}
+.hero-buttons {
+    display: flex;
+    gap: 20PX;
+    padding: 10px;
+}
+
+.btn-black{
+    padding: 15px;
+    background-color: black;
+    text-align: center;
+    color: azure;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+
+.btn-orange{
+   font-size: 1.2rem;
+  padding: 15px;
+    background-color: blanchedalmond;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+     border-radius: 15px;
+}
+.btn-orange:hover{
+    background-color: rgb(240, 204, 160);
+}
+.btn-black:hover{
+    background-color: rgb(95, 93, 91);
+}
+
+section h1{
+    text-align: center;
+    margin: 30px;
+
+}
+
+section h1 span{
+    color: pink;
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    gap:40px ;
+   margin: 30px;
+   padding: 40px;
+
+}
+.À-propos-img img {
+   width: 160px;
+   height:160px ;
+    
+    border-radius: 50%;
+    border: 1px solid pink;
+    box-shadow: 0 0 15px  15px  pink ;
+
+}
+
+.À-propos-biographie{
+    text-align: center;
+    line-height: 1.9rem;
+width: 60%;
+ padding: 10px;
+   font-size: 1.1rem;
+
+
+}
+table{
+    border-collapse: collapse;
+    width: 60%;
+    margin: 30px auto;
+    border: 1px solid black;
+
+}
+
+thead{
+    text-align: center;
+   
+    color: purple;
+
+}
+tr th{
+   
+    font-weight: 700;
+
+    padding: 15px;
+    border: 2px solid black;
+}
+tr td{
+    
+    padding: 15px;
+   border: 1px solid rgb(169, 121, 151);
+  
+   
+}
+caption{
+    color: purple;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+td:hover{
+   background: linear-gradient(to right,rgb(247, 217, 217),pink);
+ }
+
+
+ .hobbies ul{
+     margin: 20px;
+    display:grid ;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    
+
+ }
+ .hobbies ul li {
+    list-style: none;
+  text-align: center;
+  padding: 1.3rem;
+   box-shadow: 0 0 5px  5px  rgba(99, 91, 92, 0.158) ;
+   border-radius: 5PX;
+   font-weight: bold;
+
+ }
+
+
+.hobbies ul li:hover{
+   background: linear-gradient(to right,rgb(247, 217, 217),pink);
+ }
+
+ footer{
+    margin: 40px;
+    text-align: center;
+    background-color: rgb(252, 225, 230);
+   border-radius: 10px;
+ }
+footer h4{
+   padding: 30px;
+   font-size: large;
+
+
+}
+footer h4 a{
+     padding: 30px;
+     text-decoration: none;
+}
+footer h4 a:hover{
+    color: rgb(128, 195, 241);
+}
+footer p{
+    padding: 20px;
+
+
+}
+
+
+
+
+
+
+
