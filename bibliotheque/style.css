@@ -1,0 +1,143 @@
+/* ===== Style global ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* ===== Titres ===== */
+h1 {
+  color: #7a3e11;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+h2 {
+  color: #a34706;
+  margin-top: 30px;
+}
+
+/* ===== Barre de recherche et boutons ===== */
+#search {
+  width: 250px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #a34706;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #a34706;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d97328;
+}
+
+/* ===== Section catalogue ===== */
+#liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* ===== Carte livre ===== */
+.carte {
+  border: 2px solid #ffcd97;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px;
+  width: 250px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carte:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
+}
+
+.carte h3 {
+  color: #a34706;
+  margin-bottom: 8px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ===== Couleurs des boutons d’action ===== */
+.actions button:nth-child(1) { background-color: #a34706; }  /* Emprunter */
+.actions button:nth-child(2) { background-color: #784f2c; }  /* Supprimer */
+.actions button:nth-child(3) { background-color: #3498db; }  /* Réserver */
+
+.actions button:hover {
+  opacity: 0.8;
+}
+
+/* ===== Statistiques ===== */
+#stats {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #d88837;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ===== Formulaire ajouter.html ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #d88837;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fffdf9;
+  width: 300px;
+  margin: 30px auto;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+form label {
+  text-align: left;
+  font-weight: bold;
+  color: #a34706;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #a34706;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  
+  background-color: #d97328;
+}

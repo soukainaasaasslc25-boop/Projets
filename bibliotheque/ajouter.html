@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>catalogue et ajouter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   
+   
+    <h3>Ajouter une nouvaux</h3>
+    <form action="" id="form">
+        <label for="code"> code </label> 
+
+        <input type="number" id="code">
+
+        <label for="Auteur"> Auteur </label> 
+        <input type="text" id="Auteur">
+        <label for="Titre"> Titre </label> 
+        <input type="text" id="Titre">  
+        <label for="Annee"> Annee </label> 
+        <input type="text" id="Annee">
+        <label for="Prix"> Prix </label> 
+        <input type="number" id="Prix">
+        <label for="disponible">disponible</label>
+        <input type="checkbox" name="disponible" id="disponible">
+        <label for="image">Image du livre :</label>
+  <input type="file" id="image" accept="image/*">
+
+         <button type="submit">Ajouter</button>
+        
+        </form>
+           
+    
+
+    <script>
+
+  let form =document.getElementById("form");
+form.style.border = "2px solid #d88837ff";
+form.style.padding = "20px";
+form.style.borderRadius = "10px";
+form.style.width = "300px";
+form.style.backgroundColor = "#f9f9f9";
+form.style.display = "flex";
+form.style.flexDirection = "column";
+form.style.gap = "10px";
+
+    document.getElementById("form").onsubmit = function(e) {
+  e.preventDefault();
+
+  const imageInput = document.getElementById("image");
+  const fichier = imageInput.files[0]; // récupère le fichier choisi
+
+  const lecteur = new FileReader();
+
+  lecteur.onload = function(event) {
+   
+    const livre = {
+      code: parseInt(document.getElementById("code").value),
+      titre: document.getElementById("Titre").value,
+      auteur: document.getElementById("Auteur").value,
+      annee: parseInt(document.getElementById("Annee").value),
+      prixDh: parseFloat(document.getElementById("Prix").value),
+      image: event.target.result || "", 
+      disponible: document.getElementById("disponible").checked
+    };
+
+    if (window.opener && !window.opener.closed) {
+      
+      window.opener.ajouterLivre(livre); // envoie le livre au catalogue
+      alert("Livre ajouté !");
+      window.close();
+    } else {
+      alert("La page catalogue n'est pas ouverte !");
+    }
+  };
+
+  // lire le fichier s’il existe, sinon passer une chaîne vide
+  if (fichier) {
+    lecteur.readAsDataURL(fichier);
+  } else {
+    // déclenche l’onload avec une image vide
+    lecteur.onload({ target: { result: "" } });
+  }
+};
+
+    </script>
+
+
+
+</body>
+</html>
