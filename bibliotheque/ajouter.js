@@ -1,5 +1,4 @@
-
-  let form =document.getElementById("form");
+let form = document.getElementById("form");
 form.style.border = "2px solid #d88837ff";
 form.style.padding = "20px";
 form.style.borderRadius = "10px";
@@ -9,41 +8,38 @@ form.style.display = "flex";
 form.style.flexDirection = "column";
 form.style.gap = "10px";
 
-    document.getElementById("form").onsubmit = function(e) {
+document.getElementById("form").onsubmit = function(e) {
   e.preventDefault();
 
+  
   const imageInput = document.getElementById("image");
-  const fichier = imageInput.files[0]; // récupère le fichier choisi
+  const fichier = imageInput.files[0];
 
-  const lecteur = new FileReader();
+  
+  let imageData = ""; 
 
-  lecteur.onload = function(event) {
-   
-    const livre = {
-      code: parseInt(document.getElementById("code").value),
-      titre: document.getElementById("Titre").value,
-      auteur: document.getElementById("Auteur").value,
-      annee: parseInt(document.getElementById("Annee").value),
-      prixDh: parseFloat(document.getElementById("Prix").value),
-      image: event.target.result || "", 
-      disponible: document.getElementById("disponible").checked
-    };
+  if (fichier) {
+    imageData = URL.createObjectURL(fichier); 
+  } else {
+    imageData = ""; 
+  }
 
-    if (window.opener && !window.opener.closed) {
-      
-      window.opener.ajouterLivre(livre); // envoie le livre au catalogue
-      alert("Livre ajouté !");
-      window.close();
-    } else {
-      alert("La page catalogue n'est pas ouverte !");
-    }
+ 
+  const livre = {
+    code: parseInt(document.getElementById("code").value),
+    titre: document.getElementById("Titre").value,
+    auteur: document.getElementById("Auteur").value,
+    annee: parseInt(document.getElementById("Annee").value),
+    prixDh: parseFloat(document.getElementById("Prix").value),
+    image: imageData, 
+    disponible: document.getElementById("disponible").checked
   };
 
-  // lire le fichier s’il existe, sinon passer une chaîne vide
-  if (fichier) {
-    lecteur.readAsDataURL(fichier);
+  if (window.opener && !window.opener.closed) {
+    window.opener.ajouterLivre(livre); 
+    alert("Livre ajouté !");
+    window.close();
   } else {
-    // déclenche l’onload avec une image vide
-    lecteur.onload({ target: { result: "" } });
+    alert("La page catalogue n'est pas ouverte !");
   }
 };
