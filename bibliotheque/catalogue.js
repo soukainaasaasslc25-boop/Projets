@@ -167,6 +167,9 @@ function afficherstatus() {
     bibliotheque.forEach(livre => {
         prixTotale += livre.prixDh;
         if(livre.disponible) disponible++;
+        if (livre.reserve) {
+          disponible--;
+        }
         if(livre.prixDh > prixMax)
            { prixMax = livre.prixDh; nomMax = livre.titre; }
         if(livre.prixDh < prixMin)
